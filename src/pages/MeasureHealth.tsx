@@ -1,14 +1,12 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Home.css';
 
 const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>HexCov19 | Home</IonTitle>
+          <IonTitle>HexCov19 | Measure Health</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -17,7 +15,6 @@ const Home: React.FC = () => {
             <IonTitle size="large">HexCov19</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
       </IonContent>
     </IonPage>
   );

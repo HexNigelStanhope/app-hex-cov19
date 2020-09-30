@@ -1,14 +1,17 @@
+import { IonItem, IonList } from '@ionic/react';
 import React from 'react';
 import './ExploreContainer.css';
+import { navigation } from '../navigation';
 
 interface ContainerProps { }
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
-    <div className="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-    </div>
+    <IonList>
+      {navigation.map((navigation) =>
+        <IonItem button key={navigation.id} routerLink={`${navigation.id}`}>{navigation.title}</IonItem>
+      )}
+    </IonList>
   );
 };
 
