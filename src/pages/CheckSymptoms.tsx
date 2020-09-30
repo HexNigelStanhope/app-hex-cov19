@@ -12,6 +12,7 @@ import {
   IonLabel,
   IonItemDivider } from '@ionic/react';
 import React from 'react';
+import ActionCard from '../components/ActionCard';
 
 const checkboxList = [
   { val: 'a high temperatue', isChecked: false },
@@ -39,6 +40,13 @@ const CheckSymptoms: React.FC = () => {
             </IonItem>
           ))}
         </IonList>
+
+        {/* If rules above don't result in Covid positive show this card */}
+        <ActionCard />
+
+        {/* If rules above do result in Covid positive show this message */}
+        {/* Option 2: Call 111 */}
+
       </IonContent>
     </IonPage>
   );

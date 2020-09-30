@@ -14,6 +14,7 @@ import {
   IonToolbar } from '@ionic/react';
   import { thermometerSharp } from 'ionicons/icons';
   import React, { useState } from 'react';
+  import ActionCard from '../components/ActionCard';
 
 const MeasureHealth: React.FC = () => {
   const [valuePulse, setPulseValue] = useState(0);
@@ -67,6 +68,12 @@ const MeasureHealth: React.FC = () => {
         </IonList>
 
         <IonButton expand="full">Submit</IonButton>
+
+        {/* If rules above don't result in Covid positive show this card */}
+        <ActionCard />
+
+        {/* If rules above do result in Covid positive show this message */}
+        {/* Option 2: Call 111 */}
 
       </IonContent>
 
