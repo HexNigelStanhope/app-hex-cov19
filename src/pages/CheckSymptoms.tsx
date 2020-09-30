@@ -11,11 +11,6 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">HexCov19</IonTitle>
-          </IonToolbar>
-        </IonHeader>
         Check Symptoms
       </IonContent>
     </IonPage>
