@@ -1,13 +1,8 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "hex.patient.cov19",
   "appName": "app-hex-cov19",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
-  "plugins": {
-    "SplashScreen": {
-      "launchShowDuration": 0
-    }
-  },
   "cordova": {}
 }
