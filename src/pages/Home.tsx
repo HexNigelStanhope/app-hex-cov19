@@ -11,7 +11,7 @@ const Home: React.FC = () => {
           <IonTitle>HexCov19 | Home</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent className="ion-padding">
         <ExploreContainer />
       </IonContent>
     </IonPage>
