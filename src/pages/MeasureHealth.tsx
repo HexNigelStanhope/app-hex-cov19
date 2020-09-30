@@ -16,6 +16,7 @@ const Home: React.FC = () => {
             <IonTitle size="large">HexCov19</IonTitle>
           </IonToolbar>
         </IonHeader>
+        Measure Health
       </IonContent>
     </IonPage>
   );
