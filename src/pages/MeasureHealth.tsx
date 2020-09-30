@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButtons, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
 
 const Home: React.FC = () => {
@@ -6,6 +6,7 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
+          <IonButtons slot="start"><IonBackButton /></IonButtons>
           <IonTitle>HexCov19 | Measure Health</IonTitle>
         </IonToolbar>
       </IonHeader>
