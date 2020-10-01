@@ -1,7 +1,7 @@
 export const navigation = [
   {
     id: 'MeasureHealth',
-    title: 'Measure Health'
+    title: 'Measure your Health'
   },
   {
     id: 'CheckSymptoms',

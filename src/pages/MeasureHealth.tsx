@@ -11,13 +11,13 @@ import {
   IonPage,
   IonRange,
   IonTitle,
-  IonToolbar } from '@ionic/react';
+  IonToolbar, IonInput } from '@ionic/react';
   import { thermometerSharp } from 'ionicons/icons';
   import React, { useState } from 'react';
   import ActionCard from '../components/ActionCard';
 
 const MeasureHealth: React.FC = () => {
-  const [valuePulse, setPulseValue] = useState(0);
+  const [valuePulse, setPulseValue] = useState<number>(0);
   const [valueOxygen, setOxygenValue] = useState(0);
   const [valueTemperature, setTemperatureValue] = useState(0);
 
@@ -32,11 +32,8 @@ const MeasureHealth: React.FC = () => {
 
       <IonContent className="ion-padding" fullscreen>
         <IonItem>
-          <IonLabel position="stacked">Pulse rate</IonLabel>
-          <IonRange min={40} max={140} pin={true} snaps={true} step={1}value={valuePulse} onIonChange={e => setPulseValue(e.detail.value as number)}>
-            <IonLabel slot="start">40</IonLabel>
-            <IonLabel slot="end">140</IonLabel>
-          </IonRange>
+          <IonLabel position="floating">Pulse rate</IonLabel>
+          <IonInput required min="40" max="140" type="number" value={valuePulse} placeholder="must be between 40 and 140" onIonChange={e => setPulseValue(parseInt(e.detail.value!, 0))}></IonInput>
         </IonItem>
 
         <IonItem>

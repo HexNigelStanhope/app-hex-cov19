@@ -1,4 +1,5 @@
 import {
+  IonButton,
   IonButtons,
   IonBackButton,
   IonContent,
@@ -15,7 +16,7 @@ import React from 'react';
 import ActionCard from '../components/ActionCard';
 
 const checkboxList = [
-  { val: 'a high temperatue', isChecked: false },
+  { val: 'a high temperature', isChecked: false },
   { val: 'a new cough', isChecked: false },
   { val: 'a loss or change to your sense of smell or taste', isChecked: false },
   { val: 'shortness of breath', isChecked: false }
@@ -41,6 +42,7 @@ const CheckSymptoms: React.FC = () => {
           ))}
         </IonList>
 
+        <IonButton expand="full">Continue</IonButton>
         {/* If rules above don't result in Covid positive show this card */}
         <ActionCard />
 
