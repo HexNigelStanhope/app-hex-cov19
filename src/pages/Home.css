@@ -1,3 +1,15 @@
-ion-content {
-  --background: url(/assets/splash-bg.svg);
+ion-content{
+  --background: none;
+  --ion-background-color:#eeeeee;
+  --background: #fff url('/assets/undraw_medicine_b1ol.svg') no-repeat center center / cover;
 }
+
+ion-content {
+  --background:none;
+  background:url('./../assets/images/undraw_medicine_b1ol.svg');
+  background-size: cover;
+  background-position: center center; 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+ 
