@@ -1,1 +1,23 @@
-/* Home styles to go here:  i.e. background image */
+ion-content{
+  --background: none;
+  --ion-background-color: var(--ion-color-light);
+  --background: var(--ion-text-color) url('/assets/app-bg.svg') no-repeat center center / cover;
+}
+
+.list-md {
+  --ion-item-background: var(--ion-color-light);
+  padding: 0;
+}
+
+ion-content {
+  --background:none;
+  background:url('./../assets/images/app-bg.svg');
+  background-size: cover;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+ion-list ion-item:last-child {
+  --border-color: transparent;
+}
