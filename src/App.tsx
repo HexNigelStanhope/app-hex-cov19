@@ -1,5 +1,5 @@
-import React from 'react';
-import { Redirect, Route } from 'react-router-dom';
+import React from "react";
+import { Redirect, Route } from "react-router-dom";
 import {
   IonApp,
   IonIcon,
@@ -7,13 +7,14 @@ import {
   IonTabBar,
   IonTabButton,
   IonLabel,
-  IonTabs } from '@ionic/react';
-import { callSharp as phoneIcon } from 'ionicons/icons';
-import { home } from 'ionicons/icons';
-import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
-import MeasureHealth from './pages/MeasureHealth';
-import CheckSymptoms from './pages/CheckSymptoms';
+  IonTabs,
+} from "@ionic/react";
+import { callSharp as phoneIcon } from "ionicons/icons";
+import { home } from "ionicons/icons";
+import { IonReactRouter } from "@ionic/react-router";
+import Home from "./pages/Home";
+import MeasureHealth from "./pages/MeasureHealth";
+import CheckSymptoms from "./pages/CheckSymptoms";
 
 const App: React.FC = () => (
   <IonApp>
@@ -32,11 +33,10 @@ const App: React.FC = () => (
             <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton tab="call" href="/">
-            <IonIcon icon={phoneIcon} />
-            <IonLabel>Call 111</IonLabel>
+            <IonIcon icon={phoneIcon} onClick={() => window.open("tel:111")} />
+            <IonLabel onClick={() => window.open("tel:111")}>Call 111</IonLabel>
           </IonTabButton>
         </IonTabBar>
-
       </IonTabs>
     </IonReactRouter>
   </IonApp>
