@@ -15,6 +15,7 @@ import {
   import { thermometerSharp } from 'ionicons/icons';
   import React, { useState } from 'react';
   import ActionCard from '../components/ActionCard';
+  import './MeasureHealth.css';
 
 const MeasureHealth: React.FC = () => {
   const [valuePulse, setPulseValue] = useState<number>(0);
