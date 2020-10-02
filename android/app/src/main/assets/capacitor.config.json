@@ -1,0 +1,8 @@
+{
+  "appId": "hex.patient.cov19",
+  "appName": "app-hex-cov19",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}
