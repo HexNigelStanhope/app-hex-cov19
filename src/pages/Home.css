@@ -28,3 +28,15 @@ ion-list ion-item:last-child {
 ion-button {
   text-transform: uppercase;
  }
+ .sc-ion-label-ios-s h3, .sc-ion-label-ios-s h4, .sc-ion-label-ios-s h5, .sc-ion-label-ios-s h6{
+   white-space: break-spaces;
+ }
+ .warning-list {
+   margin:0;
+   padding:0 0 0 18px ;
+ 
+}
+ .warning-list li{
+   padding: 0 0 2rem 0;
+
+ }
