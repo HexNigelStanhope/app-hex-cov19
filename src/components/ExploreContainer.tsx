@@ -1,7 +1,8 @@
-import { IonItem, IonList } from '@ionic/react';
+import { IonButton, IonList, IonIcon } from '@ionic/react';
 import React from 'react';
 import './ExploreContainer.css';
 import { navigation } from '../navigation';
+import { arrowForward } from 'ionicons/icons';
 
 interface ContainerProps { }
 
@@ -9,7 +10,8 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <IonList>
       {navigation.map((navigation) =>
-        <IonItem button key={navigation.id} routerLink={`${navigation.id}`}>{navigation.title}</IonItem>
+        <IonButton  expand="full" key={navigation.id} routerLink={`${navigation.id}`}>{navigation.title}<IonIcon slot="start" icon={arrowForward} />
+        </IonButton>
       )}
     </IonList>
   );

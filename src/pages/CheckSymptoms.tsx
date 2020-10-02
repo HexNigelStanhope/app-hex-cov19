@@ -1,5 +1,4 @@
 import {
-  IonButton,
   IonButtons,
   IonBackButton,
   IonContent,
@@ -13,7 +12,8 @@ import {
   IonLabel,
   IonItemDivider } from '@ionic/react';
 import React from 'react';
-import ActionCard from '../components/ActionCard';
+//import ActionCard from '../components/ActionCard';
+import Continue from '../components/Continue';
 
 const checkboxList = [
   { val: 'a high temperature', isChecked: false },
@@ -33,7 +33,7 @@ const CheckSymptoms: React.FC = () => {
       </IonHeader>
       <IonContent className="ion-padding" fullscreen>
         <IonList>
-          <IonItemDivider>Some text to explain what this is about</IonItemDivider>
+          <IonItemDivider>Please make sure you are resting for at least 5 minutes before taking your readings.</IonItemDivider>
           {checkboxList.map(({ val, isChecked }, i) => (
             <IonItem key={i}>
               <IonLabel>{val}</IonLabel>
@@ -41,10 +41,13 @@ const CheckSymptoms: React.FC = () => {
             </IonItem>
           ))}
         </IonList>
+ 
+        {/* instead of continue, we should have Measure your health  */}
 
-        <IonButton expand="full">Continue</IonButton>
+        <Continue/>
+
         {/* If rules above don't result in Covid positive show this card */}
-        <ActionCard />
+        {/* <ActionCard /> */}
 
         {/* If rules above do result in Covid positive show this message */}
         {/* Option 2: Call 111 */}

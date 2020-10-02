@@ -9,11 +9,14 @@ ion-content{
   padding: 0;
 }
 
+
 ion-content {
   --background:none;
+  --ion-background-color: var(--ion-color-light-tint);
+  
   background:url('./../assets/images/app-bg.svg');
   background-size: cover;
-  background-position: center center;
+  background-position: bottom center;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -21,3 +24,7 @@ ion-content {
 ion-list ion-item:last-child {
   --border-color: transparent;
 }
+
+ion-button {
+  text-transform: uppercase;
+ }
