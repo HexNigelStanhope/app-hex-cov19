@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">app-hex-cov19</string>
+    <string name="title_activity_main">app-hex-cov19</string>
+    <string name="package_name">hex.patient.cov19</string>
+    <string name="custom_url_scheme">hex.patient.cov19</string>
+</resources>

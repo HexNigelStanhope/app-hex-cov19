@@ -15,6 +15,7 @@ import { IonReactRouter } from "@ionic/react-router";
 import Home from "./pages/Home";
 import MeasureHealth from "./pages/MeasureHealth";
 import CheckSymptoms from "./pages/CheckSymptoms";
+import utils from "./pageLogic/pageUtils";
 
 const App: React.FC = () => (
   <IonApp>
@@ -33,8 +34,8 @@ const App: React.FC = () => (
             <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton tab="call" href="/">
-            <IonIcon icon={phoneIcon} onClick={() => window.open("tel:111")} />
-            <IonLabel onClick={() => window.open("tel:111")}>Call 111</IonLabel>
+            <IonIcon icon={phoneIcon} onClick={utils.OpenDialerOnPhone} />
+            <IonLabel onClick={utils.OpenDialerOnPhone}>Call 111</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
