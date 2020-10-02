@@ -38,5 +38,30 @@ ion-button {
 }
  .warning-list li{
    padding: 0 0 2rem 0;
-
  }
+ ion-item-divider{
+   color: #4A1B53;
+   font-weight: bold;
+ }
+ ion-checkbox {
+  background: #ffffff;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 0px;
+  border-color: #d8006f !important;
+  --height: 24px;
+  --width: 24px;
+  --checkmark-color: #d8006f;
+  --background-checked: transparent;
+  --border-color: transparent;
+  --border-color-checked: transparent;
+}
+.aux-input{
+  background: red;
+}
+.range-knob-handle > .range-knob {
+  background-color: #1257c7 !important
+}
+.range-knob-handle ~ .range-knob-handle > .range-knob {
+  background-color: #e6780b !important
+}

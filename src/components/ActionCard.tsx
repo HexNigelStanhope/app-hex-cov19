@@ -13,7 +13,7 @@ const HexCard: React.FC<HexCardProps> = () => {
     <IonCard>
       <IonCardHeader>
         <IonCardTitle>
-          Option 1: You are unlikely to have coronavirus
+          Thank you for taking the time to record.
         </IonCardTitle>
       </IonCardHeader>
       <IonCardContent>

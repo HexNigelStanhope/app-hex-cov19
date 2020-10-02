@@ -11,7 +11,7 @@ const Continue: React.FC<ContainerProps> = () => {
     <IonList>
       {navigation_continue.map((navigation_continue) =>
         <IonButton  expand="full" key={navigation_continue.id} routerLink={`${navigation_continue.id}`}>{navigation_continue.title}
-         <IonIcon slot="right" icon={arrowForward} />
+         <IonIcon slot="end" icon={arrowForward} />
         </IonButton> 
 
       )}

@@ -10,7 +10,8 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <IonList>
       {navigation.map((navigation) =>
-        <IonButton  expand="full" key={navigation.id} routerLink={`${navigation.id}`}>{navigation.title}<IonIcon slot="start" icon={arrowForward} />
+        <IonButton  expand="full" key={navigation.id} routerLink={`${navigation.id}`}>{navigation.title}
+        <IonIcon slot="end" icon={arrowForward} />
         </IonButton>
       )}
     </IonList>
