@@ -1,11 +1,11 @@
 ion-content{
   --background: none;
-  --ion-background-color: var(--ion-color-light);
+  --ion-background-color: var(--ion-color-light-tint);
   --background: var(--ion-text-color) url('/assets/app-bg.svg') no-repeat center center / cover;
 }
 
 .list-md {
-  --ion-item-background: var(--ion-color-light);
+  --ion-item-background: var(--ion-color-light-tint);
   padding: 0;
 }
 
