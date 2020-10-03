@@ -1,5 +1,4 @@
 import {
-  IonButton,
   IonButtons,
   IonBackButton,
   IonContent,
@@ -72,6 +71,10 @@ const CheckSymptoms: React.FC = (props) => {
             </IonItem>
           ))}
         </IonList>
+ 
+        {/* instead of continue, we should have Measure your health  */}
+
+        <Continue/>
 
         <IonButton
           expand="full"
@@ -83,7 +86,6 @@ const CheckSymptoms: React.FC = (props) => {
         </IonButton>
         {/* If rules above don't result in Covid positive show this card */}
         <ActionCard showOption={showOption} />
-
         {/* If rules above do result in Covid positive show this message */}
         {/* Option 2: Call 111 */}
       </IonContent>

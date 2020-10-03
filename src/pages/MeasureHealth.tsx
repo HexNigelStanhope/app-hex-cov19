@@ -6,10 +6,12 @@ import {
   IonHeader,
   IonIcon,
   IonItem,
+  IonItemDivider,
   IonLabel,
-  IonList,
   IonPage,
   IonRange,
+  IonSelect,
+  IonSelectOption,
   IonTitle,
   IonSelect,
   IonSelectOption,
@@ -46,7 +48,7 @@ const MeasureHealth: React.FC = () => {
   };
 
   const [valuePulse, setPulseValue] = useState<number>(0);
-  const [valueOxygen, setOxygenValue] = useState(0);
+  const [valueOxygen, setOxygenValue] = useState<number>(0);
   const [valueTemperature, setTemperatureValue] = useState(0);
 
   return (
@@ -154,7 +156,7 @@ const MeasureHealth: React.FC = () => {
           </IonRange>
         </IonItem>
 
-        <IonList>
+        <IonItemDivider>Your Selections</IonItemDivider>
           <IonItem>
             <IonLabel>Pulse rate: {valuePulse}</IonLabel>
           </IonItem>
@@ -164,7 +166,7 @@ const MeasureHealth: React.FC = () => {
           <IonItem>
             <IonLabel>Temperature: {valueTemperature}</IonLabel>
           </IonItem>
-        </IonList>
+
 
         <IonButton
           expand="full"
