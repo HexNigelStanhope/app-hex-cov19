@@ -1,26 +1,23 @@
-import React from 'react';
-import {
-  IonCard,
-  IonCardContent,
-  IonCardHeader,
-  IonCardTitle
-} from '@ionic/react';
+import React from "react";
+import Action1Messsage from "./Action1Message";
+import Action2Messsage from "./Action2Message";
 
-interface HexCardProps { }
-
-const HexCard: React.FC<HexCardProps> = () => {
-  return (
-    <IonCard>
-      <IonCardHeader>
-        <IonCardTitle>
-          Option 1: You are unlikely to have coronavirus
-        </IonCardTitle>
-      </IonCardHeader>
-      <IonCardContent>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </IonCardContent>
-    </IonCard>
-  )
-}
+const HexCard: React.FC = (props) => {
+  if(props.showOption === 1)
+  {
+      return (
+        <Action1Messsage></Action1Messsage>
+      )
+  }
+  else if (props.showOption === 2)
+  {
+    return (
+      <Action2Messsage></Action2Messsage>
+    )
+  }
+  else{
+    return <></>;
+  }
+};
 
 export default HexCard;
