@@ -10,8 +10,6 @@ import {
   IonLabel,
   IonPage,
   IonRange,
-  IonSelect,
-  IonSelectOption,
   IonTitle,
   IonSelect,
   IonSelectOption,

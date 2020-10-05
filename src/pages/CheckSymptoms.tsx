@@ -1,4 +1,5 @@
 import {
+  IonButton,
   IonButtons,
   IonBackButton,
   IonContent,
@@ -17,6 +18,7 @@ import ActionCard from "../components/ActionCard";
 import { PatientContext } from "../App";
 import symptomsUtils from "../pageLogic/symptomsUtils";
 import logic from "../pageLogic/symptomsLogic";
+import Continue from "../components/Continue";
 
 const CheckSymptoms: React.FC = (props) => {
   const patientData = React.useContext(PatientContext);
@@ -85,7 +87,9 @@ const CheckSymptoms: React.FC = (props) => {
           Continue
         </IonButton>
         {/* If rules above don't result in Covid positive show this card */}
-        <ActionCard showOption={showOption} />
+        <ActionCard 
+          showOption={showOption} 
+        />
         {/* If rules above do result in Covid positive show this message */}
         {/* Option 2: Call 111 */}
       </IonContent>

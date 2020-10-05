@@ -2,7 +2,11 @@ import React from "react";
 import Action1Messsage from "./Action1Message";
 import Action2Messsage from "./Action2Message";
 
-const HexCard: React.FC = (props) => {
+interface HexCardProps {
+  showOption: number;
+}
+
+const HexCard: React.FC<HexCardProps> = (props) => {
   if(props.showOption === 1)
   {
       return (
